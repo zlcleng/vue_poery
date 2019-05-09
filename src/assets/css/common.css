@@ -1,0 +1,266 @@
+/*格式化样式*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+.clear{
+  clear:both
+}
+a{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+html{
+  height:100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  -o-text-size-adjust:100%;
+  text-size-adjust:100%;
+  font-size:45px
+}
+@media only screen and (min-width: 320px){
+  html{
+    font-size:45px
+  }
+}
+@media only screen and (min-width: 360px){
+  html{
+    font-size:48px
+  }
+}
+@media only screen and (min-width: 375px){
+  html{
+    font-size:50px
+  }
+}
+@media only screen and (min-width: 384px){
+  html{
+    font-size:51px
+  }
+}
+@media only screen and (min-width: 412px){
+  html{
+    font-size:55px
+  }
+}
+@media only screen and (min-width: 414px){
+  html{
+    font-size:56px
+  }
+}
+@media only screen and (min-width: 600px){
+  html{
+    font-size:80px
+  }
+}
+em{
+  font-style:normal
+}
+body{
+  color:#000;
+  font-size:.3rem;
+  font-family:\5FAE\8F6F\96C5\9ED1,\5b8b\4f53,Arial,sans-serif;
+  background:#f6f6f6;
+  height:100%;
+  position:relative;
+}
+/*1px;解决方案*/
+.border-radius {
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-radius {
+        border: 0px;
+        border-radius: 0px;
+        position: relative;
+    }
+    .border-radius:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+        border: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+.border-top {
+    border-top: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-top {
+        border-top: 0px;
+        position: relative;
+    }
+    .border-top:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-top: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+.border-bottom {
+    border-bottom: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-bottom {
+        border-bottom: 0px;
+        position: relative;
+    }
+    .border-bottom:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+.border-right {
+    border-right: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-right {
+        border-right: 0px;
+        position: relative;
+    }
+    .border-right:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-right: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+/*mint 1px*/
+.mint-1px-t {
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-t {
+        background-image: -webkit-linear-gradient(top, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+.mint-1px-b {
+    background-image: -webkit-linear-gradient(bottom, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(0deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-b {
+        background-image: -webkit-linear-gradient(bottom, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(0deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+.mint-1px-l {
+    background-image: -webkit-linear-gradient(left, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(90deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-l {
+        background-image: -webkit-linear-gradient(left, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(90deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+}
+.mint-1px-r {
+    background-image: -webkit-linear-gradient(right, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(270deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-r {
+        background-image: -webkit-linear-gradient(right, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(270deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+.recItem{
+  margin: .3rem;
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  box-shadow: 0 0 0.5rem #ccc inset;
+  padding: .4rem .1rem;
+}
+.recItem p{
+  text-align:center;
+  padding: 0 .3rem;
+  font-size: .32rem;
+}
+.title{
+  text-align: left;
+  line-height: .8rem;
+  background: #ededed;
+  padding-left: .3rem;
+
+}
+.recItem h5{
+  font-size:.36rem;
+}
+.recItem span{
+  margin: .15rem 0;
+  display: block;
+  font-size: .28rem;
+}
